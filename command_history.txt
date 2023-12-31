@@ -1,0 +1,134 @@
+    1  cd /c/temp
+    2  ls
+    3  mkdir git-cc
+    4  cd git-cc
+    5  ls -la
+    6  git init
+    7  ls -la
+    8  tree -a
+    9  clear
+   10  ls
+   11  code README.md
+   12  ls
+   13  git status
+   14  git add README.md 
+   15  git status
+   16  git commit
+   17  git status
+   18  git log
+   19  git log --oneline
+   20  git show 4c60c1e
+   21  clear
+   22  date
+   23  date > file1.txt
+   24  git status
+   25  date > file2.txt
+   26  git status
+   27  git add .
+   28  git status
+   29  git commit -m "Added a couple of files."
+   30  git log
+   31  git branch
+   32  git branch --all
+   33  git branch b1
+   34  git branch
+   35  git checkout b1
+   36  date > file3.txt
+   37  git status
+   38  git add .
+   39  git commit -m "Added file3.txt."
+   40  git status
+   41  git checkout main
+   42  git rebase b1
+   43  git log
+   44  git rebase -i
+   45  git rebase -i 4c60c1e06fafdb1047a931030fba501e86ab0bde
+   46  git status
+   47  git log
+   48  git branch -d b1
+   49  git branch -D b1
+   50  date > file4.txt
+   51  git add .
+   52  git commit -m "Added file4.txt."
+   53  git reset HEAD^1
+   54  git status
+   55  git stash
+   56  rm file4.txt
+   57  ls
+   58  date > file1.txt
+   59  git status
+   60  git stash
+   61  git stash clear
+   62  git branch
+   63  git checkout -b b1
+   64  date > file1.txt
+   65  git add .
+   66  git commit -m "Updated content of file1.txt."
+   67  git checkout main
+   68  date > file1.txt
+   69  git add .
+   70  git commit -m "Updated file1.txt content."
+   71  git rebase b1
+   72  git rebase --abort
+   73  git merge b1
+   74  git merge --abort
+   75  git merge b1
+   76  git mergetool
+   77  git status
+   78  find . -name *.orig
+   79  find . -name *.orig -delete
+   80  git commit -m "Resolved merge conflicts for file1.txt."
+   81  git status
+   82  cat file1.txt
+   83  git log
+   84  git checkout b1
+   85  git merge main
+   86  cat file1.txt
+   87  date > file5.txt
+   88  git add .
+   89  git commit -m "Added file5.txt."
+   90  git log --oneline
+   91  git checkout main
+   92  git cherry-pick 1003a6e
+   93  git log
+   94  ls
+   95  gitk
+   96  cd ..
+   97  git clone https://github.com/vicsharp-shibusa/Dapper.git
+   98  cd Dapper/
+   99  ls
+  100  git remote -v
+  101  git remote add upstream https://github.com/DapperLib/Dapper.git
+  102  git remote -v
+  103  ls
+  104  code build.cmd
+  105  git status
+  106  git add .
+  107  git commit -m "Broke the build."
+  108  git push origin main
+  109  git push upstream main
+  110  git fetch --all --prune
+  111  clear
+  112  git log --oneline
+  113  git reset --hard 4160c9f
+  114  git f
+  115  git status
+  116  git push origin main --force
+  117  git pull upstream main
+  118  cd ..
+  119  rm -rf Dapper
+  120  cd git-cc/
+  121  git status
+  122  git log
+  123  git remote add origin https://github.com/vicsharp-shibusa/git-cc-example.git
+  124  git push origin main
+  125  code secrets.json
+  126  git status
+  127  code .gitignore
+  128  git status
+  129  git add .
+  130  git commit -m "Added .gitignore."
+  131  git fetch --all
+  132  git status
+  133  git push origin main
+  137  history > command_history.txt
